@@ -18,7 +18,7 @@ architecture = '../ilsvrc-nets/vgg16-fcn.prototxt'
 caffe.set_device(int(sys.argv[1]))
 caffe.set_mode_gpu()
 
-solver = caffe.SGDSolver('solver.prototxt')
+solver = caffe.SGDSolver('easy_solver.prototxt')
 
 # solver.net.copy_from(weights)  # APD: Was getting shape errors from this.
 # Apparently need to copy from VGG original format to FCN format.

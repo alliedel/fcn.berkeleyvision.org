@@ -11,8 +11,8 @@ try:
 except:
     pass
 
-weights = '../ilsvrc-nets/vgg16-fcn.caffemodel'
-architecture = '../ilsvrc-nets/vgg16-fcn.prototxt'
+weights = '../ilsvrc-nets/vgg16.caffemodel'
+architecture = '../ilsvrc-nets/vgg16.prototxt'
 
 # init
 caffe.set_device(int(sys.argv[1]))
